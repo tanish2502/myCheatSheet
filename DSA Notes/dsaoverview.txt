@@ -1,0 +1,64 @@
+DSA:
+	Arrays and Strings:
+	Kadane's Algorithm
+	Dutch National Flag Algo
+	Sliding Window
+	Two pointers
+	
+	Multidimentional Array:
+	Traversal Based Program
+	Rotation Based Program
+
+EXPERTISE IN ARRAY AND STRINGS
+
+Recursion and Backtracking
+	Basic Recursion problem
+	Divide & Conquer
+Sorting Algo:
+	Insertion Sort
+	Selection Sort
+Binary Search:
+	BS on Array
+	BS on Matrix
+Linked List:
+	Reversal Problems (Eg. Reverse the linked list)
+	Sorting
+	Slow and Fast Pointers
+	Modify Linked List
+Stacks and Queues:
+	Implementation and Application based Questions
+Binary Trees:
+	Tree Traversal
+	Construction of Trees
+	Tree Views
+BST
+Priority Queues and Heaps:
+	Implementation and Application based Questions
+	Conversion Based Problems
+	K based Problems (Jaha K dikhe, vaha priority queues and heap use hone hai)
+Graphs:
+	Graph Traversals: BFS and DFS
+	MST
+	Shortest Path Algo's
+	Topological Sort
+	Graph in Matrix
+Dynamic Programming:
+	DP in Arrays
+	DP in Strings
+	DP with Maths
+	DP with Trees
+	Breaking and Partition
+	Counting Based Problems
+Hard Recursion and Backtracking Questions
+Other Topics:
+	Hashmaps
+	Tries
+	Bit Manipulation
+	Greedy
+	Circular Queues
+	Deques
+	Doubly and Circular Linked List
+	String Algorithm like KMP and Z Algo
+	
+	If in a problem it's mentioned as sorted Array, Try first Binary Search First: Most of the time we will get the answer.
+	NOTE: You see Sorted Array->Apply Binary Search 1st.
