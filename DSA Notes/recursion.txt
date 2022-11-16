@@ -1,0 +1,45 @@
+What is Recursion?
+	- It's a simple function calling another function.
+	- All these functions have the same body and definition.
+	- All the function calls that happen in the programming language, they go into the stack memory.
+	- When a function is not finished executing, it will remain in the stack.
+	- When a function finishes executing, it is removed from the stack & the flow of program is restored to where that function was called.
+	- Base Condition: Used to stop the new calls for the recursion. (It's Simple if condition)
+	- If you are calling a function again & again you can treat as a separate call in a stack.
+	- Hence each separate call takes separate call stack memory.
+	- If No Base Condition? -> Function calls will keep happening, stack will be filled again & again. Resulting in exceeding the limit of the computer memory resulting an error named as StackOverFlow.
+	- Main parts of Recusrion are, base condition, body and recursive call.
+	
+Why Recursion?
+	- Helps us in solving bigger/complex problems in simpler way.
+	- One can convert recursion solutions into iteration(loops) & vice-versa. Meaning: first solve it using recursion, then convert it into iteration to get more optimized answer.
+	- Space Complexity is not constant because of recursive calls.
+
+How to find Recursion can be applied?
+	- Break the problem into smaller problems, and hence then into formulas.
+	- When you write recursion in formula, then it is called recurance relation.
+	- Try to figure out the recursive tree.
+	- The base condition is represented by the answers we already have.
+	- If there is last function call, then it's called as tail recursion, else non tail recursion.
+	
+How to understand & approach a problem?
+	- See if you can break down problems into smaller problems.
+	- Write recurrence relation if needed.
+	- Draw the recursion tree.
+	- About the tree:
+		○ See the flow of the functions, how they are getting in stack
+		○ Identify & focus on left tree calls & right tree calls.
+		○ Draw the tree & pointers again & again using pen & paper and use debugger to see the flow of execution.
+	- See how the values & what types of values are returned at each step.
+	- See where the function values coming out of.
+	- In the end, you will come out of the main function.
+
+Working with Variables in Recursion.
+	- Three types of variables are used in recursion:
+		○ Arguments
+		○ Return type
+		○ In the body of the function
+		
+Types of Recurrence Relation:
+	- Linear Recurrence Relation -> Fibonacci series
+Divide & Conquer Relation(Reduced by a factor) -> Binary Search
