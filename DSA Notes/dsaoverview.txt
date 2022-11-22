@@ -62,3 +62,5 @@ Other Topics:
 	
 	If in a problem it's mentioned as sorted Array, Try first Binary Search First: Most of the time we will get the answer.
 	NOTE: You see Sorted Array->Apply Binary Search 1st.
+
+
