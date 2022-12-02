@@ -1,5 +1,17 @@
 C++ Notes
 
+C++ Progrmmming Language Book.
 
+Chap-> Tour of C++;
+C++ Support for Modular Programmming.
+
+https://www.techopedia.com/definition/25972/modular-programming
+
+Modularity can be acheived by practicing these below given way for example.
+
+3 files:
+abc.h        -> only function declarations -> also can be called as interface
+abc.c        -> defination of all the function present in abc.h
+abc_client.c -> using the above functions as needed by the client.
 
 
