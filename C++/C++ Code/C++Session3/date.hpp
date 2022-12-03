@@ -15,11 +15,7 @@ class Date
         bool static isDateValid(int day, int month, int year);
 
     public:
-        Date(int initDay, int initMonth, int initYear){
-            day = initDay;
-            month = initMonth;
-            year = initYear;
-        };
+        Date(int initDay, int initMonth, int initYear);
 
         int getDay() const;
         int setDay(int newDay);
