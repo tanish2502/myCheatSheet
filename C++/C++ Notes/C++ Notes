@@ -15,3 +15,5 @@ abc.c        -> defination of all the function present in abc.h
 abc_client.c -> using the above functions as needed by the client.
 
 
+Static keyword: Used while function declaration & function defination enables the function call of that function only in the file where it is defined & can't be called outside the file where it is defined.
+Used in the server side in case of above example server code.
