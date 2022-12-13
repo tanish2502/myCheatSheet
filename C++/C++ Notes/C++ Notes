@@ -18,6 +18,21 @@ abc_client.c -> using the above functions as needed by the client.
 Static keyword: Used while function declaration & function defination enables the function call of that function only in the file where it is defined & can't be called outside the file where it is defined.
 Used in the server side in case of above example server code.
 
-In C++, the size of the null class is 1 because it is the smallest possible size that a class can have. This is due to the way that the C++ compiler is designed. When a class is defined, the compiler automatically adds a null terminator to the end of the class, which is a special character that indicates the end of the class definition. This null terminator takes up one byte of memory, which is why the size of the null class is 1.
+- In C++, the size of the null class is 1 because it is the smallest possible size that a class can have. 
+This is due to the way that the C++ compiler is designed. When a class is defined, the compiler automatically adds a null terminator to the end of the class, 
+which is a special character that indicates the end of the class definition. This null terminator takes up one byte of memory, which is why the size of the null class is 1.
 
-However, it's important to note that the size of the null class is not always 1. It can vary depending on the implementation of the C++ compiler. Some compilers may use a different method for defining classes, which could result in a different size for the null class. Additionally, the size of the null class may be different for different data types. For example, the size of the null class for an int data type may be different from the size of the null class for a char data type.
+- However, it's important to note that the size of the null class is not always 1. It can vary depending on the implementation of the C++ compiler. 
+Some compilers may use a different method for defining classes, which could result in a different size for the null class. 
+Additionally, the size of the null class may be different for different data types. 
+For example, the size of the null class for an int data type may be different from the size of the null class for a char data type.
+
+- C++ is a multi-paradigm language &  supports all 7 paradigms:
+1.  Procedural Programming
+2.  Object Oriented Programming
+3.  Generic Programming
+4.  Functional Programming
+5.  Meta Programming
+6.  Aspect Oriented Programming
+7.  Modular Programming
+
