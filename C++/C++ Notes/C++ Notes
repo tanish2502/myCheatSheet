@@ -28,7 +28,7 @@ Additionally, the size of the null class may be different for different data typ
 For example, the size of the null class for an int data type may be different from the size of the null class for a char data type.
 
 - C++ is a multi-paradigm language &  supports all 7 paradigms:
-1.  Procedural Programming
+1.  Procedural Programming  (Captured in C Language)
 2.  Object Oriented Programming
 3.  Generic Programming
 4.  Functional Programming
