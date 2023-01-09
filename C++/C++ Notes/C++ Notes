@@ -19,8 +19,8 @@ Static keyword: Used while function declaration & function defination enables th
 Used in the server side in case of above example server code.
 
 - In C++, the size of the null class is 1 because it is the smallest possible size that a class can have. 
-This is due to the way that the C++ compiler is designed. When a class is defined, the compiler automatically adds a null terminator to the end of the class, 
-which is a special character that indicates the end of the class definition. This null terminator takes up one byte of memory, which is why the size of the null class is 1.
+This is due to the way that the C++ compiler is designed. When a class is defined, the compiler automatically adds a null terminator to the end of the class, which is a special character that indicates the end of the class definition. This null terminator takes up one byte of memory, which is why the 
+size of the null class is 1.
 
 - However, it's important to note that the size of the null class is not always 1. It can vary depending on the implementation of the C++ compiler. 
 Some compilers may use a different method for defining classes, which could result in a different size for the null class. 
@@ -36,3 +36,5 @@ For example, the size of the null class for an int data type may be different fr
 6.  Aspect Oriented Programming
 7.  Modular Programming
 
+- Why Template is needed in C++?
+While implementing function, 3 things are done: fn declaration, fn defination & fn call. While declaring the function, function paramter list parameter's data type if commited while writing src code, then while calling that fn, if logic is to be implemented on the multiple values of same data type then everything will work fine, but if data type changes then in principle/on paper logic this will not work because of type system barrier.
