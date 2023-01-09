@@ -23,3 +23,16 @@ This paradigm has two features:
 - But early binding of the variable name and variable type cannot be prevented by formal parameters, cz it is essentially is data definition statement.
 - Very early binding of variable names in which fns are written and it's data type, because of which we are not getting reusability across the type -> This is the main ROOT CAUSE bcz of which we face this issue and hence Function Template is required.
 - Function Template: It allows us to differ the binding of formal parameters & it's data type until the fn call.
+
+- Template is a keyword in C++ and while writing template<> and adding a parameter list inside <> separated with a comma, that is called a Template Parameter List.
+
+- If typename is a type annotation in a template parameter list, then you are a type parameter in a template parameter list.
+- Template is Brahmastra of C++.
+- If it can't be done using Template then you can’t do it in C++.
+
+test<Call parameter>();
+parameter list variable ni template i.e., the template parameter list is used at RHS, used to assign to another variable at LHS.
+
+What happens internally when using a template?
+- When template func is called in the program, the compiler replaces all <T> with the data type that is used while fn is called and a new function is made with that data type.
+- If fn has the same name, but diff <T> values, then diff many new fn will be created & at that instance fn overloading kicks in, as the data type of the newly formed fn’s formal list parameters will be diff & hence their mangled name will be diff and will be called as required with the values passed while that fn call.
