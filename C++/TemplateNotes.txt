@@ -36,3 +36,15 @@ parameter list variable ni template i.e., the template parameter list is used at
 What happens internally when using a template?
 - When template func is called in the program, the compiler replaces all <T> with the data type that is used while fn is called and a new function is made with that data type.
 - If fn has the same name, but diff <T> values, then diff many new fn will be created & at that instance fn overloading kicks in, as the data type of the newly formed fn’s formal list parameters will be diff & hence their mangled name will be diff and will be called as required with the values passed while that fn call.
+
+- Main points to be noted for template:
+  - Difference between Class template, class, & class object:
+    array -> class template 
+    array<int, ARRAY_LENGTH> -> class 
+    array<int, ARRAY_LENGTH> -> iarr -> OBJECT 
+  - Method for Class template instantiation:
+    For fn/class template instantiation: Give call parameter to each parameter of the parameter list params of the class/fn template.
+    And if the parameter is type parameter, then define that type in your program serves as call parameter.
+    If Non-type parameter, then const integer expression serves as class parameter.
+  - Syntax of class template instantiation is == class name. This can be used exactly like we use data type while declaring object, ptr, reference,           return type annotation, rvalue reference and all.
+  
