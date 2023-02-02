@@ -1,0 +1,9 @@
+Q_OBJECT: 
+QT has language and feature-wise extensions that are called QT MetaObject System.
+
+Those classes who wanted to use QT MetaObject System must use this Macro Q_OBJECT.
+
+explicit constructor introduced in C++ 11.
+In this implicit type conversion are strictly prohibited.
+  
+Some functions that are implemented inside OS, but called from application level. These are called as system calls. And what OS provides is called as system call interface.
