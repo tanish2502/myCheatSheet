@@ -35,3 +35,6 @@ For example, the size of the null class for an int data type may be different fr
 5.  Meta Programming
 6.  Aspect Oriented Programming
 7.  Modular Programming
+
+- Generic Info: How printf works?
+fn call of printf() -> write syscall -> writeconsole syscall -> goes into kernel -> kernel calls consoledriver -> and console driver is responsible for showing text on console given in printf() fn.
