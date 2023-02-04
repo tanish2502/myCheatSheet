@@ -1,11 +1,13 @@
 
 - Why Template is needed?
-While implementing the function, 3 things are done: fn declaration, fn definition & fn call. While declaring the function, the function parameter list parameter's data type if committed while writing src code, then while calling that fn, if logic is to be implemented on the multiple values of same data type as of parameter list's parameter then everything will work fine, but if data type changes then in principle/on paper logic this will not work because of type system barrier.
-For example, while writing fn for sorting the elements in an array of certain specific data types, Logic remains the same, but while implementing, one has to write a different piece of code for handling different data types of elements if the template is not used.
-If we have implemented this logic, suppose by taking a ptr, then we have typecast that ptr to the type it will point, which can be diff if diff data types of params are used.
-While declaring/defining the fn one can give (void* ptr) then ptr[i] cannot be interpreted by the compiler, but while implementing the logic it has to be typecasted. When this fn will be called when defined with (void* ptr), then in the current fn call, the data type of the arr passed cannot be identified by C Compiler. Hence typecasting is necessary.
+  While implementing the function, 3 things are done: fn declaration, fn definition & fn call. While declaring the function, the function parameter list parameter's data type if committed while writing src code, then while calling that fn, if logic is to be implemented on the multiple values of same data type as of parameter list's parameter then everything will work fine, but if data type changes then in principle/on paper logic this will not work because of type system barrier.
+  For example, while writing fn for sorting the elements in an array of certain specific data types, Logic remains the same, but while implementing, one has to write a different piece of code for handling different data types of elements if the template is not used.
+  If we have implemented this logic, suppose by taking a ptr, then we have typecast that ptr to the type it will point, which can be diff if diff data types of params are used.
+  While declaring/defining the fn one can give (void* ptr) then ptr[i] cannot be interpreted by the compiler, but while implementing the logic it has to be typecasted. When this fn will be called when defined with (void* ptr), then in the current fn call, the data type of the arr passed cannot be identified by C Compiler. Hence typecasting is necessary.
+ 
 - In simple terms,
-  In generic programming, void* can be given -> but the value can't be interpreted by the compiler bcz of its design until it is typecasted to the type to type of data to which it's pointing. So, in order to use it in fn logic implementation, one has to typecast that ptr to that specific data type based on the need, & hence it can't be generic.
+  In generic programming, void* can be given -> but the value can't be interpreted by the compiler bcz of its design until it is typecasted to the type to type of data to which it's pointing. 
+  So, in order to use it in fn logic implementation, one has to typecast that ptr to that specific data type based on the need, & hence it can't be generic.
 - The solution to this problem is why Template is introduced and used.
 
 - To overcome this repetition of the writing src based on the data type, in C++ we have a paradigm implemented named generic programming paradigm.
