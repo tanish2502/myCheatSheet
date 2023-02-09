@@ -48,3 +48,69 @@ OR can say language extensions implemented by QT how?
 - So, while writing QT += (libname) in Pro(QT Project File). All the files linked to the name here will be linked and the final proper working project will be created.
 -  HEADERS += (all the headerfiles) in the project.
 - SOURCES += (all the src code) in the project including main.cpp
+
+### Contents of project source code:
+*standardWindow.h*
+```
+#ifndef STANDARDWINDOW_H
+#define STANDARDWINDOW_H
+
+#include <QMainWindow>
+
+class StandardWindow : public QMainWindow
+{
+    Q_OBJECT
+public:
+    explicit StandardWindow(QWidget *parent = nullptr);
+
+signals:
+
+};
+
+#endif // STANDARDWINDOW_H
+```
+
+*standardWindow.cpp*
+```
+#include "standardwindow.h"
+
+StandardWindow::StandardWindow(QWidget *parent)
+    : QMainWindow{parent}
+{
+
+}
+```
+*main.cpp*
+```
+include <QApplication>
+
+#include "standardwindow.h"
+
+iint main(int argc, char *argv[])
+{
+    QApplication app(argc, argv);                 // this app object captures the process
+    StandardWindow wnd;                           // creation of “wnd” object of type StandardWindow, having an object of QMainWindow
+    wnd.setWindowTitle("THE STANDARD WINDOW!!");  // char string of title window of QMainWindow	is set with this char string given
+    wnd.show();                                   // window assigned with this memory for this object gets rendered and displayed
+    return app.exec();                            // till the window is destroyed/closed until then this function doesn’t ends/returns. 
+                                                  //Once application terminates, one can exit from exec() and return from this main() function
+}
+```
+- In QT class named Application, that class captures Runtime Process Entity. 
+- app object of Application runs till our process runs, and destroys only with the process’s termination.
+- Sometimes below these lines of code don’t work:
+```
+    StandardWindow wnd;
+    wnd.show();
+    wnd.setWindowTitle("THE STANDARD WINDOW!!");
+```
+- This issue can be faced sometimes if the Q_OBJECT macro is not added in the header file because of which Meta Object Compiler isn’t included, hence Q_OBJECT in QMainWindow Class can’t be processed because of the absence of MOC.exe and the program doesn’t compiles/works.
+- In QT, GUI components through which we interact in the program window like a push button, radio button, checkbox, dropdown list, etc. All these are special types of windows called “Widgets”(Window Gadgets).
+- All Widgets have some properties in common, hence they have created a common base Class for the same named, QWidget. Hence it can be said that all widgets are QWidget.
+- Now, in the class name StandardWindow, there are 2 possibilities for the type of widget:
+  1. ***Top Level Widget***: Widget that gets rendered into the independent window. (Parent of this widget is nullptr)
+  2. ***Embeddable Widget***: Widget that gets rendered in another main/independent widget window.
+- If in the line of code given below, if the value of the parent is not nullptr, then that widget will be rendered into the parent widget’s independent window & this widget will be an embeddable widget of that parent.
+```
+explicit StandardWindow(QWidget *parent = nullptr);
+```
