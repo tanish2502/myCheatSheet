@@ -114,3 +114,9 @@ iint main(int argc, char *argv[])
 ```
 explicit StandardWindow(QWidget *parent = nullptr);
 ```
+### Control Flow Difference
+- ***Console-Based App***: The application knows what is to be done from Start to End. Characteristic feature:  Has absolute clarity of what is to be done next. The only condition is if a call is made to blocking fn, & if its unblocking is not dependent on the user’s input then it can be indefinitely blocked. For example, scanf().
+- ***Graphical-Based App***:  The application has the behaviour like Console-Based App until a certain point but after that point based upon the input from the user or input devices in the client GUI window. The process follows the process based on the inputs provided. And is called event-driven architecture. 1 of these events propels the application to close/terminate itself(like clicking on a close button).
+- This event-driven Architecture can be implemented in 2 ways:
+  1. Using CallBack Mechanism
+  2. Using Signal & Slot Mechanism (Specific to QT)
