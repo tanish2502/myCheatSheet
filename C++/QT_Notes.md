@@ -120,3 +120,40 @@ explicit StandardWindow(QWidget *parent = nullptr);
 - This event-driven Architecture can be implemented in 2 ways:
   1. Using CallBack Mechanism
   2. Using Signal & Slot Mechanism (Specific to QT)
+
+### More on QT
+- QT is not an interpreter.
+- In an interpreted programming language, interpreter is present at run-time, to handle callback fn OS is present for the same at Runtime.
+- In case of QT, it's not present in run-time, but the QT libraries are present/loaded in process's virtual address space. But QT as an entity is not present.
+- Whenever signal is emitted, which slot is to be called for that corresponding signal. This type of calls that are statically resolved, that calls has to be placed statically. And few calls are resolved at runtime only.
+- Like, as Derived Class Object's function is called on the Base Class Object of that Derived class object in runtime, same technique is used to call/execute SLOT using RTTI.
+- In statically type language, using RTTI to pull off this is really skillful stuff.
+- RTTI: In C++, RTTI (Run-time type information) is a mechanism that exposes information about an object’s data type at runtime and is available only for the classes which have at least one virtual function. It allows the type of an object to be determined during program execution.
+- NOTE: QT is not an interpreter or OS, that decides at runtime that a signal has emitted, and corresponding SLOT is to be executed for the same at runtime.
+- QT is present in the form of libraries. 
+- QT's MOC.exe is divine and plays the crucial role. As whenever signal is emitted, corresponding SLOT call is placed at either compile time or which signal is to be emitted is decided at runtime then the SLOT for the same is determined & run/executed at runtime. This leads to the conclusion, of what high level RTTI is implemented & used in QT.
+- And Since RTTI is used here, QT program is a bit slower as compared to pure cpp program because of usage of RTTI.
+
+### Signals & Slots
+- In which class, the signal is created. Every Object of that class can emmit that signal. And each emission of the signal from diff objects of that class will be considered differently and will be handled accordingly with context of that object that emitted the signal.
+- Now, this signal can be emit in 2 ways:
+  - When an object wants to emit a signal, then that object must call a member function that internally uses an emit statement to emit a signal.
+  - Signals are emitted by objects when they change their state in a way that may be interesting to the outside world. This is all the object does to communicate.
+
+- In Class of QT: explore these stuff:
+	- Member Functions
+	- Inherited From
+	- Signals
+	- Slots
+	
+- Can be done:
+	Can implement self QLineEdit class, named cppQLineEdit;
+- Slots are public member functions.
+- object created from QWidget class, it takes form of window bcz it is a container widget, in which window with client area gets created.
+- This object gets created in memory, with QWidget type.
+- There can be delay in creating memory for a object, & rendering that object from the memory.
+
+- While creating QT Project for Gravitational Calculator. 
+	- It is inherited fron the Base Class named QDialog, & have added Q_OBJECT while declaring the class in the project.
+- There are 3 principal stratergies named Layout, Grid & Geometry by which a programmer can describe/specify how a widget should be laid on the container widget.
+- Grid is easy and widely used in professional domain.
